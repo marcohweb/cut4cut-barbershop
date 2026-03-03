@@ -1,78 +1,128 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Cut4Cut Barbershop | Corvallis</title>
+<title>Cut4Cut Studio | Corvallis</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
 <style>
 body {
   margin:0;
-  font-family:Arial, sans-serif;
+  font-family:'Poppins', sans-serif;
   background:#111;
   color:white;
+}
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://instagram.fpdx1-1.fna.fbcdn.net/v/t51.2885-15/350356619_608487743583832_7928300403466977693_n.jpg?_nc_ht=instagram.fpdx1-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=vGv8vXQ4SYQAX8fnf0h&edm=ABZsPhsBAAAA&ccb=7-5&ig_cache_key=Mjg3Mjk0Njc1NzE0MjU0MjY2NA%3D%3D.2-ccb7-5&oh=00_AfBfAtuhkcaOa96TVN7ZmEa2P1fKf4G4NKHpqSHL4KxHIg&oe=657955A8&_nc_sid=4f375e');
+  background-size:cover;
+  background-position:center;
+  height:90vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
   text-align:center;
+  padding:20px;
 }
-header {
-  padding:80px 20px;
-  background:black;
-}
-h1 {
-  font-size:2.5em;
+
+.hero h1 {
+  font-size:3em;
   margin-bottom:10px;
 }
-.subtitle {
+
+.hero p {
+  font-size:1.2em;
   color:#c59d5f;
+}
+
+.btn {
+  margin-top:20px;
+  padding:14px 30px;
+  background:#c59d5f;
+  color:black;
+  text-decoration:none;
   font-weight:bold;
+  border-radius:5px;
 }
+
 section {
-  padding:50px 20px;
+  padding:60px 20px;
+  text-align:center;
 }
+
+.services {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
+
 .card {
   background:#1c1c1c;
-  margin:15px auto;
-  padding:20px;
-  border-radius:8px;
-  max-width:300px;
+  padding:25px;
+  border-radius:10px;
+  width:250px;
 }
-button {
-  padding:12px 25px;
-  background:#c59d5f;
-  border:none;
-  font-weight:bold;
-  margin-top:20px;
-  cursor:pointer;
+
+iframe {
+  width:100%;
+  max-width:600px;
+  height:350px;
+  border:0;
+  border-radius:10px;
 }
+
 footer {
   background:black;
   padding:20px;
-  font-size:0.8em;
+  text-align:center;
+  font-size:0.9em;
 }
 </style>
-</head>
 
+</head>
 <body>
 
-<header>
-  <h1>Cut4Cut Barbershop</h1>
-  <div class="subtitle">Premium Fades • Clean Cuts • Corvallis, OR</div>
-</header>
+<div class="hero">
+  <h1>Cut4Cut Studio</h1>
+  <p>Premium Fades • Clean Cuts • Corvallis, OR</p>
+  <a class="btn" href="tel:5410000000">Call Now</a>
+  <a class="btn" href="https://www.instagram.com/cut4cut.studio" target="_blank">Instagram</a>
+</div>
 
 <section>
-  <h2>Services</h2>
-  <div class="card">Haircut – $30</div>
-  <div class="card">Beard Trim – $20</div>
-  <div class="card">Haircut + Beard – $45</div>
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">Haircut – $30</div>
+    <div class="card">Beard Trim – $20</div>
+    <div class="card">Haircut + Beard – $45</div>
+  </div>
 </section>
 
 <section>
-  <h2>Contact</h2>
-  <p>📍 Corvallis, Oregon</p>
-  <p>📞 (541) 000-0000</p>
-  <p>Mon–Sat 9AM–7PM</p>
-  <button>Book Appointment</button>
+  <h2>Visit Us</h2>
+
+  <p>
+    📍 <a href="https://maps.google.com/?q=128+SW+3rd+St,+Corvallis,+OR+97333" style="color:#c59d5f;" target="_blank">
+      128 SW 3rd St, Corvallis, OR 97333
+    </a>
+  </p>
+
+  <p>📞 <a href="tel:5410000000" style="color:#c59d5f;">(541) 000-0000</a></p>
+
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2823.2323489735475!2d-123.27688058476197!3d44.56479747909873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54bb4179a46bb4cd%3A0xaea8f2cfe3b3a11c!2sCut4Cut%20Studio%2C%20128%20SW%203rd%20St%2C%20Corvallis%2C%20OR%2097333!5e0!3m2!1sen!2sus!4v1700000000000"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+
 </section>
 
 <footer>
-  © 2026 Cut4Cut Barbershop
+© 2026 Cut4Cut Studio
 </footer>
 
 </body>
